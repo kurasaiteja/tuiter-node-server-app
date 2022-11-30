@@ -11,7 +11,7 @@ import TuitsController
     from "./controllers/tuits/tuits-controller.js";
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
-                          || "mongodb://localhost:27017/Tuiter";
+                          || "mongodb://localhost:27017/tuiter";
 mongoose.connect(CONNECTION_STRING);
 const app = express()
 app.use(cors())
